@@ -6,7 +6,7 @@ import PostList from '../components/PostList';
 import MyButton from '../components/UI/button/MyButton';
 import Loader from '../components/UI/Loader/Loader';
 import MyModal from '../components/UI/MyModal/MyModal';
-// import Pagination from '../components/UI/pagination/Pagination';
+import Pagination from '../components/UI/Pagination/Pagination';
 import { getPageCount } from '../components/utils/pages/pages';
 import { useFetching } from '../hooks/useFetching';
 import { usePosts } from '../hooks/usePosts';
@@ -65,7 +65,7 @@ function Posts() {
                 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}><Loader /></div>
             }
 
-            {/* <Pagination page={page} changePage={changePage} totalPages={totalPages} /> */}
+            <Pagination page={page} changePage={changePage} totalPages={totalPages} />
         </div>
     )
 }
